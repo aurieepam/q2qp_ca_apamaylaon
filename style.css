@@ -1,0 +1,213 @@
+@import url('https://fonts.cdnfonts.com/css/muli');
+@import url('https://fonts.cdnfonts.com/css/lora');
+@import url('https://fonts.cdnfonts.com/css/cabin-2');
+
+*{
+    margin: 0; 
+    padding: 0;
+}
+
+nav{
+    display: flex;
+    padding-bottom: 0.5vh;
+    padding-top: 0.5vh;
+    background-color:  #DBA367;
+    font-family: 'Muli', sans-serif;
+}
+
+.logo img {
+    height: 55px;
+    border-radius: 360px;
+    margin-top: 1vh;
+    margin-left: 5vw;
+    margin-right: 50vw;
+}
+
+.dropdown{
+    position: relative;
+    display: inline-block;
+    margin-top: 3vh;
+    margin-left: 5vw;
+    justify-content:right;
+}
+
+.dropdown a{
+    color: black;
+    text-decoration: none;
+    font-size:large;
+    font-weight: 800;
+    text-align: center;
+}
+
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: #DBA367;
+}
+
+
+.dropdown-content .ddlink{
+    display: block;
+    padding:0.5vw;
+    width:10vw;
+    text-align: center;
+}
+
+
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+
+
+.dropdown-content :hover{
+    background-color: #F0EAE6;
+}
+
+
+
+main{
+    overflow-x: hidden;
+    background-image: url(media/bg.png);
+    background-size: cover;
+    background-repeat: repeat-x;
+}
+#vidbg{
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+
+}
+.banner h1{
+    width: 90vw;
+    top: 45vh;
+    background-color: rgba(0, 0, 0, 0.089);
+    padding: 5vw;
+    text-align: center;
+    font-size: 30pt;
+    font-weight: 800;
+    font-family: 'Lora', sans-serif;
+    position:absolute;
+
+}
+
+#background{
+    width: 90vw;
+    padding: 3vw;
+}
+
+#background #container #dog img{
+    width: 20vw;
+    margin-top: 5px;
+}
+
+#background h1{
+    margin-top: -40px;
+    text-align: left;
+    font-family: 'Muli', sans-serif;
+    font-weight: 900;
+    background-color: #F0EAE6;
+    border-radius: 10px;
+    width: 22vw;
+    padding: 2vh;
+    font-size: 6vh;
+    color:#76441F;
+}
+
+#background p{
+    margin-top: 10px;
+    margin-right: 5vw;
+    font-family: 'Cabin', sans-serif;
+    font-weight: 500;
+    font-size: x-large;
+}
+
+#background #container{
+    display:flex;
+    align-items: center;
+}
+
+#background #container #sidepic img{
+    width: 30vw;
+    height: 30vw;
+    margin-top: 5px;
+}
+
+#achievements{
+    width: 90vw;
+    padding: 3vw;
+}
+
+#dog1 img{
+    width: 15vw;
+    margin-top: 10vh;
+    margin-left: 22vw;
+}
+
+#achievements h1{
+    text-align: left;
+    font-family: 'Muli', sans-serif;
+    font-weight: 900;
+    background-color: #F0EAE6;
+    border-radius: 10px;
+    width: 26vw;
+    padding: 2vh;
+    font-size: 6vh;
+    color:#76441F;
+    margin-top: -13vh;
+}
+
+#achievements h2{
+    margin-top: 30px;
+    margin-right: 5vw;
+    font-family: 'Cabin', sans-serif;
+    font-weight: 600;
+    font-size: xx-large;
+}
+
+#achievements p{
+    margin-top: 20px;
+    margin-right: 10vw;
+    font-family: 'Cabin', sans-serif;
+    font-weight: 300;
+    font-size: x-large;
+}
+
+#container1{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+#sidepic1{
+    display:flex;
+    flex-direction: column;
+}
+
+#sidepic1 img{
+    width: 15vw;
+    margin-top: 5vh;
+}
+
+footer{
+    text-align:right;
+    position: fixed;
+    width: 100vw;
+    bottom: 0vw;
+    background-color: #DBC0AD;
+    display: block;
+    margin-top: 50vh;
+    margin-right: -20vw;
+    padding-top: 2vh;
+}
+
+.icon{
+    background: url(../media/sprite3.png);
+    background-repeat: no-repeat; width: 55px;
+    height: 55px;
+    display: inline-block;
+}
+
+#twitter{background-position: -66px -72px;;}
+#insta{background-position: -290px -221px;}
+#fb{background-position: -439px -146px;}
