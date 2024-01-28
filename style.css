@@ -7,6 +7,10 @@
     padding: 0;
 }
 
+body{
+    overflow-x: hidden;
+}
+
 nav{
     display: flex;
     padding-bottom: 0.5vh;
@@ -79,6 +83,7 @@ main{
 
 }
 .banner h1{
+    overflow-x: hidden;
     width: 90vw;
     top: 45vh;
     background-color: rgba(0, 0, 0, 0.089);
@@ -190,17 +195,30 @@ main{
 }
 
 footer{
-    text-align:right;
-    position: fixed;
-    width: 100vw;
+    text-align:left;
+    position: relative;
     bottom: 0vw;
     background-color: #DBC0AD;
-    display: block;
-    margin-top: 50vh;
-    margin-right: -20vw;
-    padding-top: 2vh;
+    display: flex;
+    padding-top: 1vh;
+    padding-bottom: 1.5vh;
+    padding-left: 2vw;
+    overflow-x: hidden;
+    width: 100vw;
+    align-items: center;
 }
 
+footer p{
+    text-align:left;
+    margin-right: 40vw;
+    font-family: 'Lora',sans-serif;
+}
+
+footer h3{
+    text-align:left;
+    margin-right: 2vw;
+    font-family: 'Lora',sans-serif;
+}
 .icon{
     background: url(../media/sprite3.png);
     background-repeat: no-repeat; width: 55px;
@@ -208,6 +226,178 @@ footer{
     display: inline-block;
 }
 
-#twitter{background-position: -66px -72px;;}
+#twitter{background-position: -66px -72px;}
 #insta{background-position: -290px -221px;}
 #fb{background-position: -439px -146px;}
+
+#initiatives{
+    width: 90vw;
+    padding: 3vw;
+    text-align: center;
+}
+
+#initiatives h1{
+    text-align: center;
+    font-family: 'Muli', sans-serif;
+    font-weight: 900;
+    background-color: #F0EAE6;
+    border-radius: 10px;
+    width: 26vw;
+    padding: 2vh;
+    font-size: 6vh;
+    color:#76441F;
+    margin-top: 5vh;
+    margin-left: 33vw;
+}
+
+.initiates{
+    margin-top: 5vh;
+    display:flex;
+    flex-direction: row;
+    width: 95vw;
+    height: 50vh;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.initiates div{
+    background-color: #DBC0AD;
+    width: 30vw;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    box-sizing: border-box;
+    padding-bottom: 1vh;
+}
+
+.imgi img{
+    height: 35vh;
+    width: 100%;
+    object-fit: cover
+}
+
+.osstxt .owwtxt{
+    box-sizing: border-box;
+}
+#initiatives h3{
+    margin-top: 30px;
+    font-family: 'Cabin', sans-serif;
+    font-weight: 600;
+    font-size: x-large;
+}
+
+#initiatives p{
+    margin-top: 20px;
+    font-family: 'Cabin', sans-serif;
+    font-weight: 300;
+    font-size: large;
+}
+
+#involvements{
+    width: 90vw;
+    padding: 3vw;
+}
+
+#involvements h1{
+    text-align: center;
+    font-family: 'Muli', sans-serif;
+    font-weight: 900;
+    background-color: #F0EAE6;
+    border-radius: 10px;
+    width: 26vw;
+    padding: 2vh;
+    font-size: 6vh;
+    color:#76441F;
+    margin-top: 5vh;
+    margin-left: 33vw;
+}
+
+#involvements p{
+    margin-top: 20px;
+    margin-right: 5vw;
+    margin-left: 20vw;
+    font-family: 'Cabin', sans-serif;
+    font-weight: 300;
+    font-size: x-large;
+}
+
+#container2{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+#sidepic2{
+    display:flex;
+    flex-direction: column;
+}
+
+#sidepic2 img{
+    width: 10vw;
+    margin-left:5vw;
+}
+
+#sidepic2 #paws{
+    margin-top: -50vh;
+    margin-bottom: 5vh;
+}
+
+.activities{
+    width: 95vw;
+    display: flex;
+    align-items: center;
+    position: relative;
+    flex-direction: column;
+}
+
+.activities .activity{
+    display: grid;
+    grid-template-columns: auto;
+    height: 100vh;
+    width:95vw;
+}
+.activities h1{
+    text-align: center;
+    background-color: #F0EAE6;
+    width: auto;
+    padding: 1vh;
+    color:#76441F;
+    border-radius: 20px;
+}
+
+#act1{
+    background: url(media/1.jpg);
+}
+
+#act2{
+    background: url(media/2.jpg);
+}
+
+#act3{
+    background: url(media/3.jpg);
+}
+
+#act4{
+    background: url(media/4.jpg);
+}
+
+#act5{
+    background: url(media/5.jpg);
+}
+
+#act6{
+    background: url(media/6.jpg);
+}
+
+#act7{
+    background: url(media/7.jpg);
+}
+
+#act8{
+    background: url(media/8.jpg);
+}
+
+#act9{
+    background: url(media/9.png);
+}
