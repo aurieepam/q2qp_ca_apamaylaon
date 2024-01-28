@@ -11,6 +11,7 @@ body{
     overflow-x: hidden;
 }
 
+/*navbar*/
 nav{
     display: flex;
     padding-bottom: 0.5vh;
@@ -68,7 +69,7 @@ nav{
 }
 
 
-
+/*index*/
 main{
     overflow-x: hidden;
     background-image: url(media/bg.png);
@@ -202,6 +203,12 @@ main{
     margin-top: 5vh;
 }
 
+#sidepic1 img:hover{
+    width: 30vw;
+}
+
+
+/*footer*/
 footer{
     text-align:left;
     position: relative;
@@ -238,6 +245,7 @@ footer h3{
 #insta{background-position: -290px -221px;}
 #fb{background-position: -439px -146px;}
 
+/*page2*/
 #initiatives{
     width: 90vw;
     padding: 3vw;
@@ -284,10 +292,12 @@ footer h3{
     height: 35vh;
     width: 100%;
     object-fit: cover
+    
 }
 
 .osstxt .owwtxt{
     box-sizing: border-box;
+    
 }
 #initiatives h3{
     margin-top: 30px;
@@ -357,34 +367,49 @@ footer h3{
 }
 
 .activities{
-    width: 95vw;
+    width: 100vw;
     display: flex;
     align-items: center;
     position: relative;
     flex-direction: column;
+    margin-bottom: 10vh;
 }
 
 .activities .activity{
     display: grid;
-    grid-template-columns: auto;
+    grid-template-columns: repeat(3, 1fr);
+    gap:10px;
     height: 100vh;
     width:95vw;
 }
 .activities h1{
+    font-family: 'Muli', sans-serif;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #76441F;
+    font-size: 6vh;
     text-align: center;
     background-color: #F0EAE6;
-    width: auto;
-    padding: 1vh;
-    color:#76441F;
-    border-radius: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: 900;
+    width: 15vw;
 }
 
+.actives{
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+}
 #act1{
-    background: url(media/1.jpg);
+    background: url(media/19.jpg);
 }
 
 #act2{
-    background: url(media/2.jpg);
+    background: url(media/20.jpg);
 }
 
 #act3{
@@ -408,14 +433,15 @@ footer h3{
 }
 
 #act8{
-    background: url(media/8.jpg);
+    background: url(media/10.jpg);
 }
 
 #act9{
-    background: url(media/9.png);
+    background: url(media/1.jpg);
 }
 
 
+/*page3*/
 #whoweare{
     display: flex;
     justify-content: space-between;
@@ -477,6 +503,10 @@ footer h3{
     transform: skewx(-10deg);
 }
 
+#misvis h1:hover{
+    transform: skewX(10deg);
+}
+
 #misvis p{
     font-family: 'Cabin', sans-serif;
     font-weight: 300;
@@ -484,6 +514,9 @@ footer h3{
     margin-top: 20vh;
 }
 
+#misvis p:hover{
+    font-size:xx-large;
+}
 #mis{
     margin-left: 10vw;
     margin-right: 57vw;
@@ -491,10 +524,98 @@ footer h3{
     margin-top: -135vh;
 }
 #vis{
-    margin-left: 57vw;
+    margin-left: 55vw;
     margin-right: 7vw;
     text-align: center;
-    margin-top: -65vh;
+    margin-top: -60vh;
+}
+
+#howtohelp img{
+    width: 15vw;
+    margin-left: 55vw;
+    margin-top: -25vh;
+    
+}
+#howtohelp h1{
+    text-align: center;
+    font-family: 'Muli', sans-serif;
+    font-weight: 900;
+    background-color: #F0EAE6;
+    border-radius: 10px;
+    width: 26vw;
+    padding: 2vh;
+    font-size: 8vh;
+    color:#76441F;
+    margin-top: 50vh;
+    margin-left: 30vw;
+}
+
+#howtohelp .contact{
+    margin-left: 30vw;
+    margin-top: -90vh;
+}
+
+#howtohelp #brown{
+    margin-bottom: 25vh;
+}
+
+#howtohelp #yellow{
+    margin-bottom: 25vh;
+}
+
+#howtohelp #black{
+    margin-bottom: 25vh;
+}
+
+#howtohelp #brown h3{
+    color: #76441F;
+    font-family: 'Cabin', sans-serif;
+    font-size: 5vh;
+}
+
+#howtohelp #brown p{
+    color: #000000;
+    font-family: 'Cabin', sans-serif;
+    font-size: 5vh;
+}
+
+#howtohelp #yellow h3{
+    color: #DBA367;
+    font-family: 'Cabin', sans-serif;
+    font-size: 5vh;
+}
+
+#howtohelp #yellow p{
+    color: #000000;
+    font-family: 'Cabin', sans-serif;
+    font-size: 5vh;
+}
+
+#howtohelp #black h3{
+    color: #000000;
+    font-family: 'Cabin', sans-serif;
+    font-size: 5vh;
+}
+
+#howtohelp #black p{
+    color: #000000;
+    font-family: 'Cabin', sans-serif;
+    font-size: 5vh;
+}
+
+#sidepic3{
+    display:flex;
+    flex-direction: column;
+}
+
+#sidepic3 img{
+    width: 20vw;
+    margin-left:5vw;
+    margin-top: 10vh;
+    animation-name:round;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
 }
 
 @keyframes round{
