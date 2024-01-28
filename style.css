@@ -104,6 +104,10 @@ main{
 #background #container #dog img{
     width: 20vw;
     margin-top: 5px;
+    animation-name:boom;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
 }
 
 #background h1{
@@ -147,6 +151,10 @@ main{
     width: 15vw;
     margin-top: 10vh;
     margin-left: 22vw;
+    animation-name:boom;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
 }
 
 #achievements h1{
@@ -269,6 +277,7 @@ footer h3{
     height: 100%;
     box-sizing: border-box;
     padding-bottom: 1vh;
+    box-shadow: 1px 1px 40px 2px rgba(0,0,0,0.2);
 }
 
 .imgi img{
@@ -336,6 +345,10 @@ footer h3{
 #sidepic2 img{
     width: 10vw;
     margin-left:5vw;
+    animation-name:round;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
 }
 
 #sidepic2 #paws{
@@ -400,4 +413,96 @@ footer h3{
 
 #act9{
     background: url(media/9.png);
+}
+
+
+#whoweare{
+    display: flex;
+    justify-content: space-between;
+    width: 95vw;
+    align-items: center;
+}
+
+#whoweare img{
+    text-align: left;
+    width: 30vw;
+    height: 90vh;
+}
+
+#abouttext{
+    margin-left: 5vw;
+    text-align: center;
+}
+
+#abouttext h1{
+    text-align: center;
+    font-family: 'Muli', sans-serif;
+    font-weight: 900;
+    background-color: #F0EAE6;
+    border-radius: 10px;
+    width: 26vw;
+    padding: 2vh;
+    font-size: 6vh;
+    color:#76441F;
+    margin-top: 5vh;
+    margin-left: 15vw;
+}
+
+#abouttext p{
+    margin-top: 20px;
+    font-family: 'Cabin', sans-serif;
+    font-weight: 300;
+    font-size: x-large;
+}
+
+#visionandmission{
+    display: flex;
+    width: 95vw;
+    margin: 5vw;
+}
+
+#visionandmission #vs{
+    margin-left: 8vw;
+}
+#visionandmission img{
+    width: 40vw;
+}
+
+#misvis h1{
+    text-align: center;
+    font-family: 'Muli', sans-serif;
+    font-weight: 900;
+    font-size: 10vh;
+    color:#000000;
+    transform: skewx(-10deg);
+}
+
+#misvis p{
+    font-family: 'Cabin', sans-serif;
+    font-weight: 300;
+    font-size: x-large;
+    margin-top: 20vh;
+}
+
+#mis{
+    margin-left: 10vw;
+    margin-right: 57vw;
+    text-align: center;
+    margin-top: -135vh;
+}
+#vis{
+    margin-left: 57vw;
+    margin-right: 7vw;
+    text-align: center;
+    margin-top: -65vh;
+}
+
+@keyframes round{
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}  
+}
+
+@keyframes boom{
+    0%{transform: scale(0.5);}
+    100%{transform: scale(1);
 }
